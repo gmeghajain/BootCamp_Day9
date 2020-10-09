@@ -1,11 +1,11 @@
 #! /bin/bash -x
 
-#Calculate Daily employee wage
-#asuming wage per hour is 20 and full day hours are 8
+#Calculate Daily employee wage for part time employee
+#asuming wage per hour is 20 and full day hours are 4
 
 
 WagePerHour=20
-FullDayHours=8
+PartTimeDayHours=4
 
-echo "Daily Employee Wage = " $(( $WagePerHour * $FullDayHours ))
+echo "Part time Employee Daily Wage = " $(( $WagePerHour * $PartTimeDayHours ))
 
