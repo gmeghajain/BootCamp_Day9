@@ -1,16 +1,11 @@
 #! /bin/bash -x
 
-#Check employee is present or absent
-#using ((RANDOM)) for attendence check
+#Calculate Daily employee wage
+#asuming wage per hour is 20 and full day hours are 8
 
-isPresent=$((RANDOM%2))
-present=1
-absent=0
-if [ $isPresent == $present ]
-	then
-		echo "Employee is Present"
-elif [ $isPresent == $absent ]
-	then
-		echo "Employee is Absent"
-fi
+
+WagePerHour=20
+FullDayHours=8
+
+echo "Daily Employee Wage = " $(( $WagePerHour * $FullDayHours ))
 
